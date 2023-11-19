@@ -1,0 +1,20 @@
+<div class="contain mt-3 mb-5 p-4">
+
+    <div class="row">
+        <h5 class="text-white">Trending Anime</h5>
+        <div class="rowposter mt-3 p-2">
+          <ng-container *ngFor="let t of trendingAnimeResult">
+            <img src="https://image.tmdb.org/t/p/original/{{ t.poster_path }}" class="rowimg largeposter" alt="..."
+              [routerLink]="['/movie',t.id]">
+          </ng-container>
+    
+        </div>
+    
+      </div>
+      
+    </div>
+
+
+
+
+    
